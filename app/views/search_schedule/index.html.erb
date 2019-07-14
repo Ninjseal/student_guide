@@ -41,7 +41,7 @@
             <% if course['teacher_first_name'] and course['teacher_last_name'] %>
               <p>Prof: <%= course['teacher_first_name'] + " " + course['teacher_last_name'] %></p>
             <% elsif course['groups'] %>
-              <p>Groups: <%= course['groups'] %></p>
+              <p><%= 'Group'.pluralize(course['groups'].length) %>: <%= course['groups'].join(', ') %></p>
             <% end %>
           </div>
         </div>
@@ -62,7 +62,7 @@
           <% if course['teacher_first_name'] and course['teacher_last_name'] %>
             <p>Prof: <%= course['teacher_first_name'] + " " + course['teacher_last_name'] %></p>
           <% elsif course['groups'] %>
-            <p>Groups: <%= course['groups'] %></p>
+            <p><%= 'Group'.pluralize(course['groups'].length) %>: <%= course['groups'].join(', ') %></p>
           <% end %>
         </div>
       </div>
@@ -83,7 +83,7 @@
           <% if course['teacher_first_name'] and course['teacher_last_name'] %>
             <p>Prof: <%= course['teacher_first_name'] + " " + course['teacher_last_name'] %></p>
           <% elsif course['groups'] %>
-            <p>Groups: <%= course['groups'] %></p>
+            <p><%= 'Group'.pluralize(course['groups'].length) %>: <%= course['groups'].join(', ') %></p>
           <% end %>
         </div>
       </div>
@@ -104,7 +104,7 @@
           <% if course['teacher_first_name'] and course['teacher_last_name'] %>
             <p>Prof: <%= course['teacher_first_name'] + " " + course['teacher_last_name'] %></p>
           <% elsif course['groups'] %>
-            <p>Groups: <%= course['groups'] %></p>
+            <p><%= 'Group'.pluralize(course['groups'].length) %>: <%= course['groups'].join(', ') %></p>
           <% end %>
         </div>
       </div>
@@ -125,7 +125,7 @@
           <% if course['teacher_first_name'] and course['teacher_last_name'] %>
             <p>Prof: <%= course['teacher_first_name'] + " " + course['teacher_last_name'] %></p>
           <% elsif course['groups'] %>
-            <p>Groups: <%= course['groups'] %></p>
+            <p><%= 'Group'.pluralize(course['groups'].length) %>: <%= course['groups'].join(', ') %></p>
           <% end %>
         </div>
       </div>
