@@ -39,7 +39,7 @@
           </div>
           <div class="schedule-card-back">
             <p>Room: <%= course['room'] %></p>
-            <p>Groups: <%= course['groups'] %></p>
+            <p><%= 'Group'.pluralize(course['groups'].length) %>: <%= course['groups'].join(', ') %></p>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@
         </div>
         <div class="schedule-card-back">
           <p>Room: <%= course['room'] %></p>
-          <p>Groups: <%= course['groups'] %></p>
+          <p><%= 'Group'.pluralize(course['groups'].length) %>: <%= course['groups'].join(', ') %></p>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@
         </div>
         <div class="schedule-card-back">
           <p>Room: <%= course['room'] %></p>
-          <p>Groups: <%= course['groups'] %></p>
+          <p><%= 'Group'.pluralize(course['groups'].length) %>: <%= course['groups'].join(', ') %></p>
       </div>
     </div>
     <% end %>
@@ -89,7 +89,7 @@
         </div>
         <div class="schedule-card-back">
           <p>Room: <%= course['room'] %></p>
-          <p>Groups: <%= course['groups'] %></  p>
+          <p><%= 'Group'.pluralize(course['groups'].length) %>: <%= course['groups'].join(', ') %></p>
         </div>
       </div>
     </div>
@@ -106,8 +106,7 @@
         </div>
         <div class="schedule-card-back">
           <p>Room: <%= course['room'] %></p>
-          <p>Groups: <%= course['groups']%>
-          </p>
+          <p><%= 'Group'.pluralize(course['groups'].length) %>: <%= course['groups'].join(', ')%></p>
         </div>
       </div>
     </div>
